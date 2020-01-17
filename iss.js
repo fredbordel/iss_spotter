@@ -41,7 +41,6 @@ const fetchCoordsByIP = function(ip, callback) {
       callback(Error(`Status Code ${response.statusCode} when fetching Coordinates for IP: ${body}`), null);
       return;
     }
-
     const { latitude, longitude } = JSON.parse(body).data;
 
     callback(null, { latitude, longitude });

@@ -18,7 +18,6 @@ fetchCoordsByIP('67.71.216.6',(error, coords) => {
     return;
   } 
     console.log('It worked! Woohoo! Returned data:', coords);
-  
 });
 
 
